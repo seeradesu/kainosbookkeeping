@@ -50,18 +50,74 @@
       margin: auto;
       padding: 20px;
     }
-    .highlight {
+    .process {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .step {
+      flex: 1 1 250px;
       background-color: #e0f7f3;
       border-left: 5px solid #34cfa3;
-      padding: 15px 20px;
-      margin: 20px 0;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    .step h3 {
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+      margin-top: 0;
+    }
+    .step h3 span {
+      font-size: 1.4em;
+      margin-right: 8px;
+    }
+    form {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
       font-weight: 500;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #3db2ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #34cfa3;
     }
     footer {
       text-align: center;
       padding: 20px;
       color: #777;
       font-size: 0.9em;
+    }
+    .social {
+      margin-top: 15px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #3db2ff;
+      text-decoration: none;
     }
     @media (max-width: 600px) {
       header h1 {
@@ -71,6 +127,9 @@
         display: block;
         margin: 10px 0;
       }
+      .process {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -78,12 +137,12 @@
   <header>
     <img src="logo.png.jpg" alt="Kainos Bookkeeping Logo">
     <h1>Kainos Bookkeeping, LLC</h1>
-    <p>A fresh approach to bookkeeping—where clarity meets renewal.</p>
+    <p>A fresh and transformative approach to bookkeeping.</p>
   </header>
 
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">About</a>
+    <a href="#process">Our Process</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -97,24 +156,55 @@
         <li>Financial reporting & insights</li>
         <li>QuickBooks Online setup & support</li>
       </ul>
+      <p><strong>Based in Houston, TX 77081</strong></p>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>"Kainos" means fresh and renewed—and that’s exactly how we approach bookkeeping. Our mission is to help small businesses experience clarity, confidence, and peace of mind in their financial records.</p>
+    <section id="process">
+      <h2>Our Process</h2>
+      <div class="process">
+        <div class="step">
+          <h3><span>📞</span>Step 1: Contact Us Today</h3>
+          <p>Contact us or submit a contact request and we'll reach out to you to learn more about your bookkeeping needs.</p>
+        </div>
+        <div class="step">
+          <h3><span>📝</span>Step 2: Assess & Estimate</h3>
+          <p>We'll review all current accounts in depth to determine a timeline and an upfront one-time or monthly estimate.</p>
+        </div>
+        <div class="step">
+          <h3><span>🤝</span>Step 3: We Work Together</h3>
+          <p>You no longer stress about being prepared for tax season and you know exactly where your money is going.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>Email us at <a href="mailto:your@email.com">your@email.com</a> or call (123) 456-7890 to schedule a free consultation.</p>
-      <div class="highlight">
-        Discover what it feels like to have bookkeeping that supports your growth.
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/mpwrbwql" method="POST">
+        <label for="fname">First Name*</label>
+        <input type="text" id="fname" name="First Name" required>
+
+        <label for="lname">Last Name*</label>
+        <input type="text" id="lname" name="Last Name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="message">Message*</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social">
+        <p>
+          <a href="https://proadvisor.intuit.com/app/accountant/search?searchId=sarah-mendoza37" target="_blank">QuickBooks ProAdvisor</a> |
+          <a href="https://instagram.com/kainosbookkeeping" target="_blank">Instagram @kainosbookkeeping</a>
+        </p>
       </div>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 Kainos Bookkeeping, LLC. All rights reserved.
+    &copy; 2025 Kainos Bookkeeping, LLC. Houston, TX 77081. All rights reserved.
   </footer>
 </body>
 </html>
