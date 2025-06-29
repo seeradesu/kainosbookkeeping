@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kainos Bookkeeping, LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #fdfdfd;
       color: #333;
       line-height: 1.6;
@@ -58,7 +59,7 @@
     }
     .step {
       flex: 1 1 250px;
-      background-color: #e0f7f3;
+      background: linear-gradient(to right, #d7f6f0, #e0f7f3);
       border-left: 5px solid #34cfa3;
       padding: 15px;
       border-radius: 4px;
@@ -68,6 +69,7 @@
       align-items: center;
       font-size: 1.1em;
       margin-top: 0;
+      color: #2d8cff;
     }
     .step h3 span {
       font-size: 1.4em;
@@ -113,11 +115,18 @@
     }
     .social {
       margin-top: 15px;
+      text-align: center;
     }
     .social a {
+      display: inline-block;
       margin: 0 10px;
       color: #3db2ff;
       text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+    .social a:hover {
+      color: #34cfa3;
     }
     @media (max-width: 600px) {
       header h1 {
@@ -137,12 +146,13 @@
   <header>
     <img src="logo.png.jpg" alt="Kainos Bookkeeping Logo">
     <h1>Kainos Bookkeeping, LLC</h1>
-    <p>A fresh and transformative approach to bookkeeping.</p>
+    <p>A fresh approach to bookkeeping—where clarity meets renewal.</p>
   </header>
 
   <nav>
     <a href="#services">Services</a>
-    <a href="#process">Our Process</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -156,7 +166,12 @@
         <li>Financial reporting & insights</li>
         <li>QuickBooks Online setup & support</li>
       </ul>
-      <p><strong>Based in Houston, TX 77081</strong></p>
+      <p><strong>Based in Houston, TX</strong></p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>"Kainos" means fresh and renewed—and that’s exactly how we approach bookkeeping. Our mission is to help small businesses experience clarity, confidence, and peace of mind in their financial records.</p>
     </section>
 
     <section id="process">
@@ -164,7 +179,7 @@
       <div class="process">
         <div class="step">
           <h3><span>📞</span>Step 1: Contact Us Today</h3>
-          <p>Contact us or submit a contact request and we'll reach out to you to learn more about your bookkeeping needs.</p>
+          <p>Contact us or submit a contact request and we'll reach out to you to learn more about your bookkeeping needs. info@kainosbookkeeping.com</p>
         </div>
         <div class="step">
           <h3><span>📝</span>Step 2: Assess & Estimate</h3>
@@ -196,15 +211,17 @@
       </form>
       <div class="social">
         <p>
-          <a href="https://proadvisor.intuit.com/app/accountant/search?searchId=sarah-mendoza37" target="_blank">QuickBooks ProAdvisor</a> |
-          <a href="https://instagram.com/kainosbookkeeping" target="_blank">Instagram @kainosbookkeeping</a>
+          <a href="https://proadvisor.intuit.com/app/accountant/search?searchId=sarah-mendoza37" target="_blank">QuickBooks ProAdvisor</a>
+          <a href="https://instagram.com/kainosbookkeeping" target="_blank" title="Instagram">
+            📸 Instagram
+          </a>
         </p>
       </div>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 Kainos Bookkeeping, LLC. Houston, TX 77081. All rights reserved.
+    &copy; 2025 Kainos Bookkeeping, LLC. Houston, TX. All rights reserved.
   </footer>
 </body>
 </html>
